@@ -7,9 +7,39 @@
 //
 
 import UIKit
+import RealmSwift
 
 class Record: UIViewController {
-
+    
+    @IBOutlet var hexCode: UILabel!
+    @IBOutlet var codeName: UITextField!
+    @IBAction func saveButton(_ sender: UIButton) {
+        if codeName.text != "" && hexCode.text != "" {
+            let remoteCode = BRCode()
+            remoteCode.hexCode = hexCode.text!
+            remoteCode.nameCode = codeName.text!
+            if saveCode(remoteCode){
+                codeName.resignFirstResponder()
+                resetValues()
+                print("\(remoteCode.nameCode) saved")
+            }
+        }
+    }
+    
+    func resetValues(){
+        codeName.text = ""
+        hexCode.text = ""
+    }
+    
+    func saveCode(_ code:BRCode) -> Bool {
+        let realm = try! Realm()
+        
+        try! realm.write {
+            realm.add(code)
+        }
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

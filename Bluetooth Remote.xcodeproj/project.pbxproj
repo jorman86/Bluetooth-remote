@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3A9E251FDE538D0038543F /* BRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9E241FDE538D0038543F /* BRCode.swift */; };
+		EE3A9E271FDFD4690038543F /* BRCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9E261FDFD4690038543F /* BRCodeCell.swift */; };
 		EE683C7D1FDE35BE00518601 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE683C7B1FDE35BD00518601 /* RealmSwift.framework */; };
 		EE683C7E1FDE35BE00518601 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE683C7C1FDE35BE00518601 /* Realm.framework */; };
 		EE683C811FDE3A8200518601 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE683C801FDE3A8200518601 /* Record.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE3A9E241FDE538D0038543F /* BRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRCode.swift; sourceTree = "<group>"; };
+		EE3A9E261FDFD4690038543F /* BRCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRCodeCell.swift; sourceTree = "<group>"; };
 		EE683C7B1FDE35BD00518601 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		EE683C7C1FDE35BE00518601 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		EE683C801FDE3A8200518601 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				EED9F3ED1FA94CFF0077AE31 /* AppDelegate.swift */,
 				EED9F3EF1FA94CFF0077AE31 /* ViewController.swift */,
+				EE3A9E241FDE538D0038543F /* BRCode.swift */,
+				EE3A9E261FDFD4690038543F /* BRCodeCell.swift */,
 				EE683C801FDE3A8200518601 /* Record.swift */,
 				EED9F3F11FA94CFF0077AE31 /* Main.storyboard */,
 				EED9F3F71FA94CFF0077AE31 /* Assets.xcassets */,
@@ -244,6 +250,8 @@
 				EED9F3F01FA94CFF0077AE31 /* ViewController.swift in Sources */,
 				EE683C811FDE3A8200518601 /* Record.swift in Sources */,
 				EED9F3EE1FA94CFF0077AE31 /* AppDelegate.swift in Sources */,
+				EE3A9E271FDFD4690038543F /* BRCodeCell.swift in Sources */,
+				EE3A9E251FDE538D0038543F /* BRCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
